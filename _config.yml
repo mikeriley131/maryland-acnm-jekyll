@@ -1,0 +1,18 @@
+host: localhost
+
+include: ['_pages']
+
+defaults:
+  -
+    scope:
+      path: "index.html" # an empty string here means all files in the project
+    values:
+      layout: "home"
+
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "interior"
+
+keep_files: [_assets]
