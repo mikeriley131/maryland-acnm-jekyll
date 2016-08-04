@@ -1,0 +1,3 @@
+- store
+- Google Analytics
+- favicon
