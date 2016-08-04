@@ -1,3 +1,1 @@
-- store
-- Google Analytics
-- favicon
+- FAQ accordion
