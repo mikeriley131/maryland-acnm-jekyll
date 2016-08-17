@@ -1,1 +1,2 @@
 - check analytics
+- get better logo file
