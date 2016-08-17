@@ -1,0 +1,137 @@
+/* ===========================================================================
+==== HEADER
+============================================================================== */
+header {
+  background: $tertiary-color;
+  padding: .5em 0;
+  margin: 0 auto;
+
+  .container {
+    max-width: 800px;
+  }
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  border-bottom: none;
+  margin-bottom: 1em;
+
+  @include brk-large {
+    float: left;
+    margin-bottom: .5em;
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+  margin: 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.nav__link {
+  flex-grow: 1;
+  text-decoration: none;
+  border-bottom: none;
+  transition: all .25s ease;
+}
+
+.nav__item {
+  text-align: center;
+  list-style-type: none;
+}
+
+.nav--utility {
+  max-width: 320px;
+  font-size: .85em;
+
+  @include brk-med {
+    margin-bottom: .5em;
+  }
+
+  @include brk-large {
+    font-size: initial;
+  }
+
+  .nav__list {
+
+    @include brk-large {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  .nav__item {
+    color: $secondary-color;
+
+    &:hover,
+    &.active-page {
+      color: $light-grey;
+    }
+  }
+
+  @include brk-large {
+    float: right;
+    width: 100%;
+
+    .nav__item {
+      text-align: right;
+      margin-bottom: .25em;
+    }
+  }
+}
+
+.nav--primary {
+  text-transform: uppercase;
+  background: $primary-color;
+
+  .container {
+    max-width: 800px;
+  }
+
+  .nav__link {
+    display: inline-block;
+    color: $light-grey;
+    padding: .5em 0;
+    position: relative;
+
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+
+  .nav__item {
+    font-size: .75em;
+
+    &.active-page {
+
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: .5em solid transparent;
+        border-right: .5em solid transparent;
+        border-bottom: .5em solid #fff;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - .5em);
+      }
+    }
+  }
+
+  @include brk-med {
+    font-size: 1.25em;
+  }
+}

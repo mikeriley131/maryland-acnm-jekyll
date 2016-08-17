@@ -1,6 +1,38 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Maryland ACNM
+description: > # this means to ignore newlines until "baseurl:"
+  Welcome to the Maryland affiliate of the American College of Nurse Midwives.
+  If you are pregnant, would like to become pregnant, or are looking for a provider for well­-woman
+  care in Maryland, please browse our site to see if a certified nurse­-midwife is right for you.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://maryland.midwife.org" # the base hostname & protocol for your site
+
+# you can create whatever you'd like and reference it via site.key
+twitter_username: mikeriley131
+github_username:  mikeriley131
+
 host: localhost
 
-include: ['_pages']
+include: ['_assets', '_pages']
+exclude: [
+  'Gruntfile.js',
+  'package.json',
+  'to-do.md',
+  'node_modules',
+  'bower_components',
+  '_assets/scss/*',
+  '_assets/js/formConfirmation.js',
+  '_assets/js/locations.js'
+]
+
+keep_files: [_assets]
 
 defaults:
   -
@@ -14,5 +46,3 @@ defaults:
       path: "_pages"
     values:
       layout: "interior"
-
-keep_files: [_assets]

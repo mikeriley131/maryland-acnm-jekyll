@@ -1,0 +1,22 @@
+/* ===========================================================================
+==== HELPER AND MODIFIER CLASSES
+============================================================================== */
+@include brk-med {
+  .left {
+    float: left;
+    margin-right: 1em;
+  }
+
+  .right {
+    float: right;
+    margin-left: 1em;
+  }
+
+  .no-float {
+    float: none;
+  }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}

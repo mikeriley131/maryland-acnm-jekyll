@@ -1,0 +1,40 @@
+/* ===========================================================================
+==== PRIMARY INTERIOR PAGE STYLES
+============================================================================== */
+
+/* For Midwives
+------------------------------------------------------------------------------ */
+@include brk-large {
+  .table--legislators {
+    th:nth-child(1) {
+      width: 5%;
+    }
+    th:nth-child(2) {
+      width: 23%;
+    }
+    th:nth-child(3) {
+      width: 5%;
+    }
+    th:nth-child(4) {
+      width: 15%;
+    }
+    th:nth-child(5) {
+      width: 15%;
+    }
+  }
+}
+
+/* Frequently Asked Questions
+-------------------------------------------------------------------*/
+.faq__list {
+
+}
+
+.faq__term {
+  font-weight: bold;
+}
+
+.faq__definition {
+  margin-bottom: 2em;
+  margin-left: 0;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "maryland-acnm",
+  "description": "Welcome to the Maryland affiliate of the American College of Nurse Midwives. If you are pregnant, would like to become pregnant, or are looking for a provider for well­-woman care in Maryland, please browse our site to see if a certified nurse­-midwife is right for you.",
+  "version": "1.0.0",
+  "author": "Mike Riley",
+  "contact": "pyrographicdesign AT gmail DOT com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikeriley131/maryland-acnm.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jekyll": "^0.4.4",
+    "time-grunt": "^1.3.0"
+  },
+  "js": {
+    "_assets/js/main.min.js": [
+      "_assets/js/main.js"
+    ]
+  }
+}

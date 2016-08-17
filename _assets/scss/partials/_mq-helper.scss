@@ -1,0 +1,19 @@
+/**
+ * Used for development only:
+ */
+body:before {
+  background: $dark-grey;
+  bottom: 0;
+  color: $light-grey;
+  content: 'XS';
+  font-size: 0.75rem;
+  padding: .25em .5em;
+  position: fixed;
+  right: 0;
+  z-index: 999;;
+
+  @include brk-small { content: 'S'; }
+  @include brk-med { content: 'M'; }
+  @include brk-large { content: 'L'; }
+  @include brk-xlarge { content: 'XL'; }
+}

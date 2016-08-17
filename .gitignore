@@ -1,1 +1,9 @@
+design-files
+bower_components
+node_modules
+_assets/images
 _site
+.sass-cache
+.jekyll-metadata
+*.map
+*.scssc

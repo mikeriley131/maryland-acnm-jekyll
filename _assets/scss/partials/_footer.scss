@@ -1,0 +1,51 @@
+/* ===========================================================================
+==== FOOTER
+============================================================================== */
+footer {
+  color: $light-grey;
+  text-align: center;
+  background: $primary-color;
+  padding: .5em 0;
+  margin: 0 auto;
+
+  .container {
+    max-width: 960px;
+  }
+
+  p {
+    font-size: .85em;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #fff;
+    border-bottom: none;
+
+    &:hover {
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+}
+
+.footer-copyright {
+
+  @include brk-large {
+    @include span(9);
+
+    margin-top: .25em;
+    text-align: left;
+  }
+}
+
+.footer-social {
+  @include brk-large {
+    @include span(3 last);
+
+    text-align: right;
+  }
+}
+
+.footer-social__icon {
+  height: 1.5em;
+  margin-bottom: 0;
+}

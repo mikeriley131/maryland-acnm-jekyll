@@ -1,0 +1,191 @@
+/* ===========================================================================
+==== GLOBAL ELEMENTS
+============================================================================== */
+body {
+  font-family: $font-stack;
+  font-size: 1.125em;
+  counter-reset: number;
+}
+
+main {
+  padding: 2em 0;
+
+  h1:first-of-type {
+    color: $highlight-color;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 1.5em;
+  }
+
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+    border-bottom: 1px dashed $secondary-color;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+
+  ul {
+
+    li:before {
+      content: '\2192';
+      color: $secondary-color;
+      margin-right: .5em;
+    }
+  }
+
+  ol {
+
+    li:before {
+      counter-increment: number;
+      content: counter(number);
+      color: $secondary-color;
+      margin-right: .5em;
+    }
+  }
+
+  li {
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+    margin-bottom: .5em;
+  }
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+}
+
+h2 {
+  margin-bottom: .5em;
+}
+
+h3, h4, h5, h6 {
+  margin-bottom: .25em;
+}
+
+h5 {
+  border-bottom: 1px solid $dark-grey;
+}
+
+.list-intro + ul,
+.list-intro + ol {
+  margin-top: -1em;
+}
+
+a:hover, a:active {
+
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 0 1em;
+  border-left: 4px solid $secondary-color;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1em;
+
+  @include brk-small {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+small {
+  font-size: .85em;
+  margin-bottom: 1em;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+table {
+  margin-bottom: 2em;
+}
+
+tr {
+  &:nth-child(even) {
+    background: $grey;
+  }
+}
+
+th {
+  border-bottom: 1px solid $highlight-color;
+  padding: .5em;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+td {
+  padding: .5em;
+}
+
+.container {
+  @include container;
+  padding: 0 .5em;
+
+  @include brk-large {
+    padding: 0;
+  }
+
+  .aside {
+    background: $tertiary-color;
+    line-height: 1.25;
+    margin: 0 0 1em 0;
+    padding: 1.25em;
+
+    @include brk-small {
+      float: right;
+      margin: 0 0 1em 1em;
+      width: 33%;
+    }
+
+    section {
+      padding-bottom: .25em;
+      border-bottom: 1px solid $dark-grey;
+      margin-bottom: 1em;
+
+      &:last-of-type {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      color: $highlight-color;
+      font-size: 1.125em;
+    }
+
+    h3 {
+      font-size: .875em;
+      line-height: 1.33;
+      margin-bottom: .25em;
+    }
+
+    p {
+      font-size: .85em;
+    }
+
+    a {
+      color: $dark-grey;
+      border-color: $dark-grey;
+    }
+  }
+}
