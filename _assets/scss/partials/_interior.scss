@@ -2,8 +2,26 @@
 ==== PRIMARY INTERIOR PAGE STYLES
 ============================================================================== */
 
+/* Find a Midwife
+-------------------------------------------------------------------*/
+.practice {
+  border-bottom: 1px solid #000;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+}
+.practice__staff--heading {
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
 /* For Midwives
 ------------------------------------------------------------------------------ */
+.news-grouping {
+  border-bottom: 1px solid #000;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+}
+
 @include brk-large {
   .table--legislators {
     th:nth-child(1) {
