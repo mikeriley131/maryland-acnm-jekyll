@@ -5,9 +5,16 @@
 /* Find a Midwife
 -------------------------------------------------------------------*/
 .practice {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $dark-grey;
   margin-bottom: 3em;
   padding-bottom: 2em;
+}
+.practice__location {
+  margin-bottom: 1em;
+  text-decoration: underline;
+}
+.practice__blurb {
+  font-style: italic;
 }
 .practice__staff--heading {
   font-weight: bold;
@@ -17,7 +24,7 @@
 /* For Midwives
 ------------------------------------------------------------------------------ */
 .news-grouping {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $dark-grey;
   margin-bottom: 3em;
   padding-bottom: 2em;
 }

@@ -1,4 +1,4 @@
-/* maryland-acnm v1.0.0 - 2016-09-28 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* maryland-acnm v1.0.0 - 2016-11-22 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -1070,9 +1070,18 @@ header .container {
 /* Find a Midwife
 -------------------------------------------------------------------*/
 .practice {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #444;
   margin-bottom: 3em;
   padding-bottom: 2em;
+}
+
+.practice__location {
+  margin-bottom: 1em;
+  text-decoration: underline;
+}
+
+.practice__blurb {
+  font-style: italic;
 }
 
 .practice__staff--heading {
@@ -1083,7 +1092,7 @@ header .container {
 /* For Midwives
 ------------------------------------------------------------------------------ */
 .news-grouping {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #444;
   margin-bottom: 3em;
   padding-bottom: 2em;
 }
