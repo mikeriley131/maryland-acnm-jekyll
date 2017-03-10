@@ -1,0 +1,6 @@
+<Files for-members.html>
+  AuthType Basic
+  AuthName "for-members"
+  AuthUserFile "/home/firesta8/.htpasswds/public_html/hostedsites/md-acnm/passwd"
+  require valid-user
+</Files>

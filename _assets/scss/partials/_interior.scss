@@ -8,25 +8,171 @@
   border-bottom: 1px solid $dark-grey;
   margin-bottom: 3em;
   padding-bottom: 2em;
-}
-.practice__location {
-  margin-bottom: 1em;
-  text-decoration: underline;
-}
-.practice__blurb {
-  font-style: italic;
-}
-.practice__staff--heading {
-  font-weight: bold;
-  margin-bottom: .5em;
+
+  &__location {
+    margin-bottom: 1em;
+    text-decoration: underline;
+  }
+
+  &__blurb {
+    font-style: italic;
+  }
+
+  &__staff--heading {
+    font-weight: bold;
+    margin-bottom: .5em;
+  }
 }
 
 /* For Midwives
 ------------------------------------------------------------------------------ */
+.sorting-nav {
+  margin-bottom: 2em;
+
+  p {
+    margin-bottom: .25em;
+  }
+
+  &__item {
+    display: inline;
+    padding-left: 0;
+    text-indent: 0;
+
+    &:before {
+      content: '';
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    border: none;
+    color: $white;
+    font-size: .75em;
+    -webkit-appearance: none;
+  }
+
+  .js-filter {
+    &__ga {
+      background-color: #139192;
+
+      &:hover {
+        background-color: darken(#139192, 10%);
+      }
+    }
+
+    &__lu {
+      background-color: #065FC5;
+
+      &:hover {
+        background-color: darken(#065FC5, 10%);
+      }
+    }
+
+    &__mm {
+      background-color: #83BAF8;
+
+      &:hover {
+        background-color: darken(#83BAF8, 10%);
+      }
+    }
+
+    &__jp {
+      background-color: #C51606;
+
+      &:hover {
+        background-color: darken(#C51606, 10%);
+      }
+    }
+
+    &__all {
+      background-color: $highlight-color;
+
+      &:hover {
+        background-color: darken($highlight-color, 10%);
+      }
+    }
+  }
+}
+
+.label {
+  color: $white;
+  display: inline-block;
+  font-size: .75em;
+  margin-bottom: .75em;
+  padding: .25em .5em;
+
+  &.ga {
+    background: #139192;
+  }
+
+  &.lu {
+    background: #065FC5;
+  }
+
+  &.mm {
+    background: #83BAF8;
+  }
+
+  &.jp {
+    background: #C51606;
+  }
+
+  &.all {
+    background: $highlight-color;
+  }
+}
+
 .news-grouping {
   border-bottom: 1px solid $dark-grey;
   margin-bottom: 3em;
   padding-bottom: 2em;
+}
+
+.photo-blurb {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    text-indent: 0;
+    padding-left: 0;
+
+    &:before {
+      content: '';
+      margin-right: 0;
+    }
+  }
+
+  img {
+    float: left;
+    margin-right: .5rem;
+
+    @include brk-small {
+      width: 150px;
+    }
+  }
+}
+
+.minutes {
+  list-style-type: upper-roman;
+  margin-left: 1.5em;
+
+  li {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  ol {
+    list-style-type: upper-alpha;
+
+    li {
+      font-size: 1.125rem;
+      font-weight: normal;
+    }
+
+    ol {
+      list-style-type: lower-alpha;
+    }
+  }
 }
 
 @include brk-large {

@@ -1,4 +1,4 @@
-/* maryland-acnm v1.0.0 - 2016-11-22 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* maryland-acnm v1.0.0 - 2017-02-12 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -720,12 +720,6 @@ main ul li:before {
   color: #139192;
   margin-right: .5em;
 }
-main ol li:before {
-  counter-increment: number;
-  content: counter(number);
-  color: #139192;
-  margin-right: .5em;
-}
 main li {
   text-indent: -1.5em;
   padding-left: 1.5em;
@@ -1074,16 +1068,13 @@ header .container {
   margin-bottom: 3em;
   padding-bottom: 2em;
 }
-
 .practice__location {
   margin-bottom: 1em;
   text-decoration: underline;
 }
-
 .practice__blurb {
   font-style: italic;
 }
-
 .practice__staff--heading {
   font-weight: bold;
   margin-bottom: .5em;
@@ -1091,10 +1082,131 @@ header .container {
 
 /* For Midwives
 ------------------------------------------------------------------------------ */
+.sorting-nav {
+  margin-bottom: 2em;
+}
+.sorting-nav p {
+  margin-bottom: .25em;
+}
+.sorting-nav__item {
+  display: inline;
+  padding-left: 0;
+  text-indent: 0;
+}
+.sorting-nav__item:before {
+  content: '';
+  margin-right: 0;
+}
+.sorting-nav__button {
+  border: none;
+  color: #fff;
+  font-size: .75em;
+  -webkit-appearance: none;
+}
+.sorting-nav .js-filter__ga {
+  background-color: #139192;
+}
+.sorting-nav .js-filter__ga:hover {
+  background-color: #0d6465;
+}
+.sorting-nav .js-filter__lu {
+  background-color: #065FC5;
+}
+.sorting-nav .js-filter__lu:hover {
+  background-color: #044794;
+}
+.sorting-nav .js-filter__mm {
+  background-color: #83BAF8;
+}
+.sorting-nav .js-filter__mm:hover {
+  background-color: #539ff5;
+}
+.sorting-nav .js-filter__jp {
+  background-color: #C51606;
+}
+.sorting-nav .js-filter__jp:hover {
+  background-color: #941004;
+}
+.sorting-nav .js-filter__all {
+  background-color: #130D29;
+}
+.sorting-nav .js-filter__all:hover {
+  background-color: #010102;
+}
+
+.label {
+  color: #fff;
+  display: inline-block;
+  font-size: .75em;
+  margin-bottom: .75em;
+  padding: .25em .5em;
+}
+.label.ga {
+  background: #139192;
+}
+.label.lu {
+  background: #065FC5;
+}
+.label.mm {
+  background: #83BAF8;
+}
+.label.jp {
+  background: #C51606;
+}
+.label.all {
+  background: #130D29;
+}
+
 .news-grouping {
   border-bottom: 1px solid #444;
   margin-bottom: 3em;
   padding-bottom: 2em;
+}
+
+.photo-blurb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.photo-blurb li {
+  text-indent: 0;
+  padding-left: 0;
+}
+.photo-blurb li:before {
+  content: '';
+  margin-right: 0;
+}
+.photo-blurb img {
+  float: left;
+  margin-right: .5rem;
+}
+@media screen and (min-width: 30em) {
+  .photo-blurb img {
+    width: 150px;
+  }
+}
+
+.minutes {
+  list-style-type: upper-roman;
+  margin-left: 1.5em;
+}
+.minutes li {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.minutes ol {
+  list-style-type: upper-alpha;
+}
+.minutes ol li {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+.minutes ol ol {
+  list-style-type: lower-alpha;
 }
 
 @media screen and (min-width: 60em) {

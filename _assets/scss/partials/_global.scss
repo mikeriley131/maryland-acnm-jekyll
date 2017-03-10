@@ -38,15 +38,15 @@ main {
     }
   }
 
-  ol {
+  // ol {
 
-    li:before {
-      counter-increment: number;
-      content: counter(number);
-      color: $secondary-color;
-      margin-right: .5em;
-    }
-  }
+  //   li:before {
+  //     counter-increment: number;
+  //     content: counter(number);
+  //     color: $secondary-color;
+  //     margin-right: .5em;
+  //   }
+  // }
 
   li {
     text-indent: -1.5em;
