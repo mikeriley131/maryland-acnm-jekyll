@@ -137,11 +137,19 @@ td {
 }
 
 .container {
-  @include container;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 .5em;
 
   @include brk-large {
     padding: 0;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
   }
 
   .aside {

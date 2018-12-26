@@ -18,7 +18,6 @@ module.exports = function(grunt) {
       prod: {
         options: {
           style: 'compressed',
-          sourcemap: 'none',
           banner: '<%= meta.banner %>'
         },
         files: [{
@@ -32,7 +31,6 @@ module.exports = function(grunt) {
       dev: {
         options: {
           style: 'expanded',
-          sourcemap: 'none',
           banner: '<%= meta.banner %>'
         },
         files: [{

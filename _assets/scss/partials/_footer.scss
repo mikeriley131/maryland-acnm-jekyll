@@ -30,8 +30,9 @@ footer {
 .footer-copyright {
 
   @include brk-large {
-    @include span(9);
-
+    width: 74.5762711864%;
+    float: left;
+    margin-right: 1.6949152542%;
     margin-top: .25em;
     text-align: left;
   }
@@ -39,8 +40,9 @@ footer {
 
 .footer-social {
   @include brk-large {
-    @include span(3 last);
-
+    width: 23.7288135593%;
+    float: right;
+    margin-right: 0;
     text-align: right;
   }
 }

@@ -30,13 +30,17 @@
   margin-bottom: 1em;
 
   @include brk-large {
-    @include span(7);
+    width: 57.6271186441%;
+    float: left;
+    margin-right: 1.6949152542%;
   }
 }
 
 .homepage-right {
   @include brk-large {
-    @include span(4 last);
+    width: 32.2033898305%;
+    float: right;
+    margin-right: 0;
   }
 }
 
