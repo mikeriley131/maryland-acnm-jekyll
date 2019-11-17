@@ -1,6 +1,5 @@
-/* maryland-acnm v1.0.0 - 2018-12-26 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* maryland-acnm v1.0.0 - 2019-10-21 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
-@charset "UTF-8";
 /* ===========================================================================
 ==== INCLUDED FONTS
 ============================================================================== */
@@ -280,9 +279,9 @@ select {
  *    `input` and others.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -321,8 +320,8 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -334,8 +333,8 @@ input[type=radio] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -343,7 +342,7 @@ input[type=number]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
@@ -355,8 +354,8 @@ input[type=search] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -618,8 +617,8 @@ code {
    ========================================================================== */
 @media print {
   *,
-*:before,
-*:after {
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
@@ -629,7 +628,7 @@ code {
   }
 
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
 
@@ -646,12 +645,12 @@ a:visited {
    * or use the `javascript:` pseudo protocol
    */
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
 
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -665,7 +664,7 @@ blockquote {
   }
 
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
 
@@ -674,14 +673,14 @@ img {
   }
 
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
 
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
@@ -713,14 +712,14 @@ main a:hover {
   border-bottom-style: solid;
 }
 main ul li:before {
-  content: "→";
+  content: '\2192';
   color: #139192;
-  margin-right: 0.5em;
+  margin-right: .5em;
 }
 main li {
   text-indent: -1.5em;
   padding-left: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 h1, h2, h3, h4 {
@@ -728,11 +727,11 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 h3, h4, h5, h6 {
-  margin-bottom: 0.25em;
+  margin-bottom: .25em;
 }
 
 h5 {
@@ -770,7 +769,7 @@ img {
 }
 
 small {
-  font-size: 0.85em;
+  font-size: .85em;
   margin-bottom: 1em;
 }
 
@@ -790,20 +789,20 @@ tr:nth-child(even) {
 
 th {
   border-bottom: 1px solid #130D29;
-  padding: 0.5em;
+  padding: .5em;
   padding-bottom: 0;
   text-align: left;
 }
 
 td {
-  padding: 0.5em;
+  padding: .5em;
 }
 
 .container {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0.5em;
+  padding: 0 .5em;
 }
 @media screen and (min-width: 60em) {
   .container {
@@ -829,7 +828,7 @@ td {
   }
 }
 .container .aside section {
-  padding-bottom: 0.25em;
+  padding-bottom: .25em;
   border-bottom: 1px solid #444;
   margin-bottom: 1em;
 }
@@ -843,12 +842,12 @@ td {
   font-size: 1.125em;
 }
 .container .aside h3 {
-  font-size: 0.875em;
+  font-size: .875em;
   line-height: 1.33;
-  margin-bottom: 0.25em;
+  margin-bottom: .25em;
 }
 .container .aside p {
-  font-size: 0.85em;
+  font-size: .85em;
 }
 .container .aside a {
   color: #444;
@@ -860,7 +859,7 @@ td {
 ============================================================================== */
 header {
   background: #dabda9;
-  padding: 0.5em 0;
+  padding: .5em 0;
   margin: 0 auto;
 }
 header .container {
@@ -876,7 +875,7 @@ header .container {
 @media screen and (min-width: 60em) {
   .logo {
     float: left;
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
   }
 }
 .logo img {
@@ -906,7 +905,7 @@ header .container {
       flex-grow: 1;
   text-decoration: none;
   border-bottom: none;
-  transition: all 0.25s ease;
+  transition: all .25s ease;
 }
 
 .nav__item {
@@ -916,11 +915,11 @@ header .container {
 
 .nav--utility {
   max-width: 320px;
-  font-size: 0.85em;
+  font-size: .85em;
 }
 @media screen and (min-width: 45em) {
   .nav--utility {
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
   }
 }
 @media screen and (min-width: 60em) {
@@ -949,7 +948,7 @@ header .container {
   }
   .nav--utility .nav__item {
     text-align: right;
-    margin-bottom: 0.25em;
+    margin-bottom: .25em;
   }
 }
 
@@ -963,22 +962,22 @@ header .container {
 .nav--primary .nav__link {
   display: inline-block;
   color: #fbfbfb;
-  padding: 0.5em 0;
+  padding: .5em 0;
   position: relative;
 }
 .nav--primary .nav__link:hover {
   background: #139192;
 }
 .nav--primary .nav__item {
-  font-size: 0.75em;
+  font-size: .75em;
 }
 .nav--primary .nav__item.active-page:after {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
-  border-left: 0.5em solid transparent;
-  border-right: 0.5em solid transparent;
-  border-bottom: 0.5em solid #fff;
+  border-left: .5em solid transparent;
+  border-right: .5em solid transparent;
+  border-bottom: .5em solid #fff;
   position: absolute;
   bottom: 0;
   left: calc(50% - .5em);
@@ -1062,7 +1061,7 @@ header .container {
 }
 .practice__staff--heading {
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
 /* For Midwives
@@ -1071,7 +1070,7 @@ header .container {
   margin-bottom: 2em;
 }
 .sorting-nav p {
-  margin-bottom: 0.25em;
+  margin-bottom: .25em;
 }
 .sorting-nav__item {
   display: inline;
@@ -1079,13 +1078,13 @@ header .container {
   text-indent: 0;
 }
 .sorting-nav__item:before {
-  content: "";
+  content: '';
   margin-right: 0;
 }
 .sorting-nav__button {
   border: none;
   color: #fff;
-  font-size: 0.75em;
+  font-size: .75em;
   -webkit-appearance: none;
 }
 .sorting-nav .js-filter__ga {
@@ -1122,9 +1121,9 @@ header .container {
 .label {
   color: #fff;
   display: inline-block;
-  font-size: 0.75em;
-  margin-bottom: 0.75em;
-  padding: 0.25em 0.5em;
+  font-size: .75em;
+  margin-bottom: .75em;
+  padding: .25em .5em;
 }
 .label.ga {
   background: #139192;
@@ -1159,12 +1158,12 @@ header .container {
   padding-left: 0;
 }
 .photo-blurb li:before {
-  content: "";
+  content: '';
   margin-right: 0;
 }
 .photo-blurb img {
   float: left;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
 @media screen and (min-width: 30em) {
   .photo-blurb img {
@@ -1229,14 +1228,14 @@ footer {
   color: #fbfbfb;
   text-align: center;
   background: #084595;
-  padding: 0.5em 0;
+  padding: .5em 0;
   margin: 0 auto;
 }
 footer .container {
   max-width: 960px;
 }
 footer p {
-  font-size: 0.85em;
+  font-size: .85em;
   margin-bottom: 0;
 }
 footer a {
@@ -1252,7 +1251,7 @@ footer a:hover {
     width: 74.5762711864%;
     float: left;
     margin-right: 1.6949152542%;
-    margin-top: 0.25em;
+    margin-top: .25em;
     text-align: left;
   }
 }
@@ -1300,30 +1299,30 @@ body:before {
   background: #444;
   bottom: 0;
   color: #fbfbfb;
-  content: "XS";
+  content: 'XS';
   font-size: 0.75rem;
-  padding: 0.25em 0.5em;
+  padding: .25em .5em;
   position: fixed;
   right: 0;
   z-index: 999;
 }
 @media screen and (min-width: 30em) {
   body:before {
-    content: "S";
+    content: 'S';
   }
 }
 @media screen and (min-width: 45em) {
   body:before {
-    content: "M";
+    content: 'M';
   }
 }
 @media screen and (min-width: 60em) {
   body:before {
-    content: "L";
+    content: 'L';
   }
 }
 @media screen and (min-width: 75em) {
   body:before {
-    content: "XL";
+    content: 'XL';
   }
 }
